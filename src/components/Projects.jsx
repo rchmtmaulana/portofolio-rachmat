@@ -62,7 +62,7 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className="flex items-center gap-4 pt-4 border-t border-slate-100 mt-auto">
+                                {/* <div className="flex items-center gap-4 pt-4 border-t border-slate-100 mt-auto">
                                     {project.githubLink && (
                                         <a
                                             href={project.githubLink}
@@ -83,7 +83,7 @@ const Projects = () => {
                                             <FaExternalLinkAlt /> Live Demo
                                         </a>
                                     )}
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     ))}

@@ -199,7 +199,7 @@ const ProjectDetail = () => {
                                 </div>
                             )}
 
-                            {/* GitHub Button */}
+                            {/* GitHub Button
                             {project.githubLink && (
                                 <div className="mt-8">
                                     <a
@@ -224,7 +224,7 @@ const ProjectDetail = () => {
                                         🌐 Live Demo
                                     </a>
                                 </div>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>

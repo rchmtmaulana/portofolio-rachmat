@@ -1,29 +1,30 @@
 export const projects = [
     {
         id: 1,
-        title: "AI Vehicle Classification System",
-        category: "Thesis Project (PT Margautama Nusantara)",
+        title: "Sistem Klasifikasi Kendaraan Berbasis AI",
+        category: "Proyek Skripsi (PT Margautama Nusantara)",
+        
         description:
-            "Sistem klasifikasi otomatis untuk gardu tol hybrid yang menggabungkan Computer Vision dan Sensor Fusion. Meningkatkan efisiensi transaksi dan akurasi data lalu lintas secara real-time.",
+            "Sistem pendukung keputusan untuk gardu tol hybrid yang menggabungkan Computer Vision dan Sensor. Membantu petugas tol mengidentifikasi golongan kendaraan secara akurat untuk meminimalkan kesalahan input manual.",
 
         fullDescription:
-            "Proyek ini dikembangkan sebagai solusi inovatif untuk mendukung digitalisasi operasional di Gardu Tol Hybrid jalan tol Makassar (PT Margautama Nusantara). Fokus utamanya adalah meningkatkan throughput transaksi dan presisi data melalui sistem otomatisasi cerdas. Sistem ini menerapkan pendekatan 'Sensor Fusion' untuk menjamin akurasi klasifikasi tetap tinggi di berbagai kondisi lingkungan, meminimalisir ketergantungan pada verifikasi visual manual.",
+            "Proyek ini dikembangkan sebagai alat bantu digital (assistive tool) bagi petugas di Gardu Tol Hybrid Makassar (PT Margautama Nusantara). Sebelumnya, petugas harus mengamati fisik kendaraan dan menentukan golongan secara manual sepenuhnya. Dengan sistem ini, petugas mendapatkan rekomendasi golongan otomatis di layar monitor secara real-time. Peran petugas bergeser dari 'penginput data' menjadi 'verifikator', di mana mereka hanya perlu mengonfirmasi hasil deteksi sistem atau melakukan koreksi jika diperlukan.",
 
         problem:
-            "Metode klasifikasi konvensional menghadapi tantangan dalam menjaga konsistensi data, terutama saat volume lalu lintas padat yang berpotensi menyebabkan antrean (bottleneck). Selain itu, variabilitas kondisi lapangan seperti cuaca ekstrem dan pencahayaan minim seringkali menurunkan akurasi deteksi pada sistem kamera standar.",
+            "Klasifikasi kendaraan secara manual mengharuskan petugas melakukan pengamatan visual terus-menerus terhadap setiap kendaraan yang lewat. Proses repetitif ini menyebabkan kelelahan visual (visual fatigue) yang tinggi, yang sering kali berujung pada kesalahan penentuan golongan (human error), terutama saat kondisi cuaca buruk atau pencahayaan minim di mana fisik kendaraan sulit terlihat jelas.",
 
         solution:
-            "Mengembangkan arsitektur Backend yang robust menggunakan Python (Flask) untuk memproses logika 'Sensor Fusion'. Sistem menyelaraskan input dari Sensor Inframerah (sebagai validasi fisik) dan Kamera (sebagai pengklasifikasi visual YOLOv8). Mekanisme ini memastikan sistem bekerja secara autonom dengan presisi tinggi, mengeliminasi kesalahan deteksi (false positives) yang umum terjadi pada Computer Vision murni.",
+            "Mengembangkan sistem deteksi cerdas berbasis 'Sensor Fusion' menggunakan Python (Flask). Sistem menggabungkan data visual dari Kamera (YOLOv8) dan data fisik dari Sensor untuk memberikan output prediksi golongan kendaraan. Prediksi ini ditampilkan langsung pada dashboard petugas sebagai 'Saran Golongan'. Petugas dapat langsung menyetujui saran tersebut atau merevisinya dengan satu klik, membuat proses kerja lebih ergonomis dan akurat.",
 
         impact: [
-            "Meningkatkan akurasi klasifikasi kendaraan hingga 98.5%",
-            "Mengurangi waktu pemrosesan data menjadi <200ms per kendaraan",
-            "Menghilangkan ketergantungan input manual petugas tol",
+            "Mengurangi beban kognitif dan kelelahan visual petugas tol secara signifikan",
+            "Meningkatkan konsistensi akurasi penentuan golongan kendaraan",
+            "Mempercepat proses pengambilan keputusan petugas (dari identifikasi manual menjadi sekadar verifikasi)",
         ],
 
         challenges: [
-            "Masalah 'Ghost Detection': Awalnya Computer Vision mendeteksi bayangan sebagai mobil. Saya mengatasinya dengan menambahkan Sensor Inframerah sebagai validator fisik.",
-            "Integrasi Hardware: Menghubungkan sensor IoT dengan backend Flask membutuhkan penanganan concurrency yang hati-hati agar tidak ada data yang terlewat (race condition).",
+            "Isu Kerapatan Kendaraan (Tailgating): Dalam kondisi antrean padat, kendaraan seringkali terlalu rapat sehingga terdeteksi sebagai satu objek besar oleh kamera. Solusinya, saya menggunakan logika input sensor fisik sebagai 'pemisah' (separator) untuk membedakan batas antar-kendaraan secara presisi.",
+            "Integrasi Hardware: Menghubungkan sensor IoT dengan backend Flask membutuhkan penanganan concurrency yang hati-hati agar saran golongan muncul tepat saat kendaraan berada di depan petugas.",
         ],
 
         gallery: [
@@ -34,11 +35,11 @@ export const projects = [
         ],
 
         features: [
-            "Algoritma Sensor Fusion (Sensor IR + Kamera)",
-            "Deteksi Objek Akurasi Tinggi menggunakan YOLOv8",
-            "Klasifikasi Real-time (Latensi <200ms)",
-            "Dashboard Monitoring Web Interaktif (React.js)",
-            "Pencatatan & Pelaporan Transaksi Otomatis",
+            "Algoritma Sensor Fusion (Sensor + Kamera)",
+            "Rekomendasi Golongan Otomatis (AI-Assisted)",
+            "Dashboard Verifikasi Petugas Interaktif",
+            "Mekanisme Koreksi Manual yang Mudah",
+            "Pencatatan Log Akurasi Sistem vs Petugas",
             "Sistem Toleransi Kesalahan (Fault Tolerance)",
         ],
 
@@ -74,7 +75,7 @@ export const projects = [
             "Membangun Single Page Application (SPA) responsif menggunakan React.js dan Firebase. Sistem dirancang dengan alur kerja modular untuk menangani tiga skenario transaksi berbeda: Reimbursement, Request Bon Sementara, dan Penyelesaian LPJ. Implementasi 'Role-Based Access Control (RBAC)' memastikan keamanan persetujuan berjenjang (Staff -> Supervisor -> Finance) dapat dilakukan secara digital dari mana saja.",
 
         impact: [
-            "Mempercepat siklus persetujuan dana operasional hingga 50% (Paperless)",
+            "Meningkatkan efisiensi alur persetujuan dengan menggantikan dokumen fisik menjadi sistem digital (Paperless)",
             "Eliminasi total risiko kehilangan dokumen fisik melalui penyimpanan Cloud",
             "Peningkatan akuntabilitas kas melalui monitoring real-time status Bon Sementara",
         ],
