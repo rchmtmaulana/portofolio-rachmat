@@ -1,48 +1,39 @@
 export const projects = [
     {
         id: 1,
-        title: "Sistem Klasifikasi Kendaraan Berbasis AI",
-        category: "Proyek Skripsi (PT Margautama Nusantara)",
-        
+        title: "AI-Based Vehicle Classification System",
+        category: "Thesis Project (PT Margautama Nusantara)",
         description:
-            "Sistem pendukung keputusan untuk gardu tol hybrid yang menggabungkan Computer Vision dan Sensor. Membantu petugas tol mengidentifikasi golongan kendaraan secara akurat untuk meminimalkan kesalahan input manual.",
-
+            "Decision support system for hybrid toll gates combining Computer Vision and sensor technology. Assists toll operators in accurately identifying vehicle classes to minimize manual input errors.",
         fullDescription:
-            "Proyek ini dikembangkan sebagai alat bantu digital (assistive tool) bagi petugas di Gardu Tol Hybrid Makassar (PT Margautama Nusantara). Sebelumnya, petugas harus mengamati fisik kendaraan dan menentukan golongan secara manual sepenuhnya. Dengan sistem ini, petugas mendapatkan rekomendasi golongan otomatis di layar monitor secara real-time. Peran petugas bergeser dari 'penginput data' menjadi 'verifikator', di mana mereka hanya perlu mengonfirmasi hasil deteksi sistem atau melakukan koreksi jika diperlukan.",
-
+            "This project was developed as a digital assistive tool for operators at Makassar Hybrid Toll Gates (PT Margautama Nusantara). Previously, operators had to manually observe vehicle physical characteristics and determine classifications entirely by themselves. With this system, operators receive automated class recommendations displayed in real-time on their monitor. Their role shifts from 'data entry personnel' to 'verifier,' where they only need to confirm the system's detection results or make corrections when necessary.",
         problem:
-            "Klasifikasi kendaraan secara manual mengharuskan petugas melakukan pengamatan visual terus-menerus terhadap setiap kendaraan yang lewat. Proses repetitif ini menyebabkan kelelahan visual (visual fatigue) yang tinggi, yang sering kali berujung pada kesalahan penentuan golongan (human error), terutama saat kondisi cuaca buruk atau pencahayaan minim di mana fisik kendaraan sulit terlihat jelas.",
-
+            "Manual vehicle classification requires operators to perform continuous visual observation of every passing vehicle. This repetitive process causes high visual fatigue, often leading to classification errors (human error), especially during poor weather conditions or low lighting where vehicle physical characteristics are difficult to discern clearly.",
         solution:
-            "Mengembangkan sistem deteksi cerdas berbasis 'Sensor Fusion' menggunakan Python (Flask). Sistem menggabungkan data visual dari Kamera (YOLOv8) dan data fisik dari Sensor untuk memberikan output prediksi golongan kendaraan. Prediksi ini ditampilkan langsung pada dashboard petugas sebagai 'Saran Golongan'. Petugas dapat langsung menyetujui saran tersebut atau merevisinya dengan satu klik, membuat proses kerja lebih ergonomis dan akurat.",
-
+            "Developed an intelligent detection system based on 'Sensor Fusion' using Python (Flask). The system combines visual data from Camera (YOLOv8) and physical data from Sensors to provide vehicle class prediction output. These predictions are displayed directly on the operator's dashboard as 'Class Suggestions.' Operators can immediately approve these suggestions or revise them with one click, making the workflow more ergonomic and accurate.",
         impact: [
-            "Mengurangi beban kognitif dan kelelahan visual petugas tol secara signifikan",
-            "Meningkatkan konsistensi akurasi penentuan golongan kendaraan",
-            "Mempercepat proses pengambilan keputusan petugas (dari identifikasi manual menjadi sekadar verifikasi)",
+            "Significantly reduced cognitive load and visual fatigue for toll operators",
+            "Improved consistency in vehicle classification accuracy",
+            "Accelerated operator decision-making process (from manual identification to simple verification)",
         ],
-
         challenges: [
-            "Isu Kerapatan Kendaraan (Tailgating): Dalam kondisi antrean padat, kendaraan seringkali terlalu rapat sehingga terdeteksi sebagai satu objek besar oleh kamera. Solusinya, saya menggunakan logika input sensor fisik sebagai 'pemisah' (separator) untuk membedakan batas antar-kendaraan secara presisi.",
-            "Integrasi Hardware: Menghubungkan sensor IoT dengan backend Flask membutuhkan penanganan concurrency yang hati-hati agar saran golongan muncul tepat saat kendaraan berada di depan petugas.",
+            "Vehicle Density Issue (Tailgating): During congested queues, vehicles are often too close together and detected as one large object by the camera. The solution involved using physical sensor input logic as a 'separator' to precisely distinguish boundaries between vehicles.",
+            "Hardware Integration: Connecting IoT sensors with the Flask backend required careful concurrency handling to ensure class suggestions appeared precisely when vehicles were in front of operators.",
         ],
-
         gallery: [
             "/gif.gif",
             "/galeri-avc-2.jpg",
             "/galeri-avc-3.jpg",
             "/galeri-avc-1.jpg",
         ],
-
         features: [
-            "Algoritma Sensor Fusion (Sensor + Kamera)",
-            "Rekomendasi Golongan Otomatis (AI-Assisted)",
-            "Dashboard Verifikasi Petugas Interaktif",
-            "Mekanisme Koreksi Manual yang Mudah",
-            "Pencatatan Log Akurasi Sistem vs Petugas",
-            "Sistem Toleransi Kesalahan (Fault Tolerance)",
+            "Sensor Fusion Algorithm (Sensor + Camera)",
+            "Automated Class Recommendation (AI-Assisted)",
+            "Interactive Operator Verification Dashboard",
+            "Easy Manual Correction Mechanism",
+            "System vs Operator Accuracy Log Recording",
+            "Fault Tolerance System",
         ],
-
         techStack: [
             "Python",
             "Flask",
@@ -51,164 +42,140 @@ export const projects = [
             "YOLOv8",
             "IoT/Sensors",
         ],
-
         image: "/avc.jpg",
-
         githubLink: "https://github.com/rchmtmaulana/repo-skripsi-anda",
         demoLink: null,
     },
+
     {
         id: 2,
         title: "Corporate Financial Management System",
         category: "Internship @ Samudera Indonesia",
-
         description:
-            "Sistem pelaporan keuangan internal berbasis web untuk digitalisasi alur reimbursement dan cash advance. Fitur mencakup multi-level approval dan tracking real-time.",
-
+            "Web-based internal financial reporting system for digitizing reimbursement and cash advance workflows. Features include multi-level approval and real-time tracking.",
         fullDescription:
-            "Selama masa magang di PT Samudera Indonesia Tbk (Cabang Makassar), saya berkolaborasi dalam pengembangan sistem manajemen keuangan internal yang mencakup siklus pendanaan operasional secara menyeluruh. Aplikasi ini mendigitalisasi tiga fungsi krusial: Pengajuan Reimbursement, Permintaan Dana Di Muka (Bon Sementara), dan Laporan Pertanggungjawaban (LPJ) penggunaan dana, menjadikannya sistem yang terpusat, transparan, dan akuntabel.",
-
+            "During my internship at PT Samudera Indonesia Tbk (Makassar Branch), I collaborated in developing an internal financial management system covering the complete operational funding cycle. This application digitizes three crucial functions: Reimbursement Submission, Advance Payment Request (Cash Advance), and Accountability Report (Settlement Report) for fund usage, creating a centralized, transparent, and accountable system.",
         problem:
-            "Penggunaan formulir kertas membuat data sulit dilacak dan memperlambat proses kerja. Tantangan utamanya meliputi risiko hilangnya dokumen fisik, keterlambatan persetujuan (approval) akibat mobilitas manajer, serta sulitnya memantau status 'Bon Sementara' yang belum di-LPJ-kan (belum dipertanggungjawabkan) secara real-time, yang berdampak pada selisih pencatatan arus kas.",
-
+            "Using paper forms made data difficult to track and slowed down work processes. Main challenges included risk of losing physical documents, approval delays due to manager mobility, and difficulty monitoring real-time status of unsettled Cash Advances, which impacted cash flow recording discrepancies.",
         solution:
-            "Membangun Single Page Application (SPA) responsif menggunakan React.js dan Firebase. Sistem dirancang dengan alur kerja modular untuk menangani tiga skenario transaksi berbeda: Reimbursement, Request Bon Sementara, dan Penyelesaian LPJ. Implementasi 'Role-Based Access Control (RBAC)' memastikan keamanan persetujuan berjenjang (Staff -> Supervisor -> Finance) dapat dilakukan secara digital dari mana saja.",
-
+            "Built a responsive Single Page Application (SPA) using React.js and Firebase. The system was designed with modular workflows to handle three different transaction scenarios: Reimbursement, Cash Advance Request, and Settlement Report Completion. Implementation of 'Role-Based Access Control (RBAC)' ensures secure multi-level approval (Staff -> Supervisor -> Finance) can be performed digitally from anywhere.",
         impact: [
-            "Meningkatkan efisiensi alur persetujuan dengan menggantikan dokumen fisik menjadi sistem digital (Paperless)",
-            "Eliminasi total risiko kehilangan dokumen fisik melalui penyimpanan Cloud",
-            "Peningkatan akuntabilitas kas melalui monitoring real-time status Bon Sementara",
+            "Improved approval workflow efficiency by replacing physical documents with a digital system (Paperless)",
+            "Total elimination of physical document loss risk through Cloud storage",
+            "Enhanced cash accountability through real-time monitoring of Cash Advance status",
         ],
-
         challenges: [
-            "Kompleksitas Logika Bisnis: Menerjemahkan SOP keuangan manual yang ketat (seperti aturan limit waktu pelaporan penggunaan dana dan hierarki approval) ke dalam logika aplikasi tanpa celah.",
-            "Keamanan Data (Firestore Rules): Mengimplementasikan aturan keamanan database yang kompleks untuk memastikan data sensitif hanya bisa diakses dan diubah oleh role yang berhak (RBAC).",
-            "PDF Generation: Tantangan teknis dalam menghasilkan laporan PDF siap cetak yang presisi langsung dari browser (Client-side generation).",
+            "Business Logic Complexity: Translating strict manual financial SOPs (such as rules on fund usage reporting time limits and approval hierarchies) into application logic without gaps.",
+            "Data Security (Firestore Rules): Implementing complex database security rules to ensure sensitive data can only be accessed and modified by authorized roles (RBAC).",
+            "PDF Generation: Technical challenge in generating print-ready PDF reports precisely directly from the browser (Client-side generation).",
         ],
-
         gallery: [
             "/galeri-intern-1.png",
             "/galeri-intern-5.png",
             "/galeri-intern-6.png",
             "/galeri-intern-2.jpg",
         ],
-
         features: [
-            "3 Modul Utama: Reimbursement, Bon Sementara, & LPJ",
-            "Persetujuan Digital Berjenjang (Staff -> Supervisor -> Finance)",
-            "Pelacakan Status Bon Sementara (Settlement Tracking)",
-            "Keamanan Akses Berbasis Peran (RBAC)",
-            "Ekspor Laporan Otomatis ke PDF",
-            "Tampilan Responsif (Bisa Approval lewat HP)",
+            "3 Core Modules: Reimbursement, Cash Advance, & Settlement Report",
+            "Multi-Level Digital Approval (Staff -> Supervisor -> Finance)",
+            "Cash Advance Status Tracking (Settlement Tracking)",
+            "Role-Based Access Security (RBAC)",
+            "Automated Report Export to PDF",
+            "Responsive Display (Mobile Approval Supported)",
         ],
-
         techStack: [
             "React.js",
             "Firebase Auth",
             "Cloud Firestore",
-            "Bootstrap",
             "PDF Generation",
         ],
-
         image: "/intern_samudera.jpg",
-
         githubLink: null,
-
         demoLink: "https://smdr-mks.com",
     },
+
     {
         id: 3,
         title: "EduSensei - VTuber Learning Platform",
         category: "P2MW Grant Awardee (Ministry of Education)",
-
         description:
-            "Platform e-learning interaktif yang didanai oleh Kemdikbud. Menggabungkan materi video berbasis Virtual YouTuber dengan fitur kuis evaluasi untuk pengalaman belajar yang lebih efektif.",
-
+            "Interactive e-learning platform funded by the Ministry of Education. Combines Virtual YouTuber-based video content with quiz evaluation features for a more effective learning experience.",
         fullDescription:
-            "EduSensei adalah proyek startup EdTech yang berhasil memenangkan pendanaan hibah kompetitif P2MW (Program Pembinaan Mahasiswa Wirausaha) dari Kemdikbud. Sebagai Frontend Developer, saya membangun platform pembelajaran berbasis web yang unik. Di sini, materi pelajaran tidak disampaikan oleh guru konvensional, melainkan melalui video rekaman berbasis VTuber (Virtual YouTuber) yang menarik visualnya. Platform ini juga memberikan kesempatan kepada siswa mengerjakan kuis setelah menonton video untuk mengukur pemahaman materi.",
-
+            "EduSensei is an EdTech startup project that successfully secured competitive grant funding from P2MW (Student Entrepreneurship Development Program) by the Ministry of Education. As Frontend Developer, I built a unique web-based learning platform. Here, educational content is delivered not by conventional teachers, but through visually engaging VTuber (Virtual YouTuber) recorded videos. The platform also provides opportunities for students to complete quizzes after watching videos to assess material comprehension.",
         problem:
-            "Metode pembelajaran daring asinkron (menonton rekaman video biasa) sering kali membuat siswa pasif dan cepat bosan, mengakibatkan materi tidak terserap dengan baik. Tanpa adanya mekanisme evaluasi langsung setelah menonton, sulit untuk memastikan apakah siswa benar-benar menyimak konten yang disampaikan.",
-
+            "Asynchronous online learning methods (watching regular recorded videos) often make students passive and quickly bored, resulting in poor material retention. Without direct evaluation mechanisms after watching, it's difficult to ensure students actually paid attention to the delivered content.",
         solution:
-            "Mengembangkan platform Video-on-Demand (VOD) interaktif menggunakan React.js. Solusi ini menggabungkan daya tarik visual karakter VTuber untuk menjaga fokus siswa, dengan mekanisme 'Active Recall' melalui kuis terintegrasi. Siswa menonton materi yang telah direkam sebelumnya, lalu sistem secara otomatis menyajikan soal evaluasi yang relevan sebelum mereka bisa lanjut ke materi berikutnya.",
-
+            "Developed an interactive Video-on-Demand (VOD) platform using React.js. This solution combines the visual appeal of VTuber characters to maintain student focus with 'Active Recall' mechanisms through integrated quizzes. Students watch pre-recorded content, then the system automatically presents relevant evaluation questions before they can proceed to the next material.",
         impact: [
-            "Berhasil mengamankan pendanaan hibah nasional P2MW Kemdikbud (Validasi tingkat nasional)",
-            "Meningkatkan retensi perhatian siswa melalui pendekatan visual VTuber yang gamified",
-            "Memastikan pemahaman materi 100% sebelum lanjut ke bab berikutnya melalui sistem 'Quiz-Lock'",
+            "Successfully secured national P2MW grant funding from the Ministry of Education (National-level validation)",
+            "Increased student attention retention through gamified VTuber visual approach",
+            "Ensured 100% material comprehension before advancing to the next chapter through 'Quiz-Lock' system",
         ],
-
         challenges: [
-            "Sinkronisasi Video & Kuis: Tantangan teknis dalam menangani 'Video Events' di React untuk mendeteksi kapan video selesai diputar secara akurat guna membuka kunci (unlock) fitur kuis.",
-            "Desain UI yang Seimbang: Merancang antarmuka yang menarik secara visual (tema anime/VTuber) namun tetap bersih (distraction-free) agar siswa fokus pada materi ajar.",
+            "Video & Quiz Synchronization: Technical challenge in handling 'Video Events' in React to accurately detect when videos finished playing to unlock quiz features.",
+            "Balanced UI Design: Designing a visually appealing interface (anime/VTuber theme) while maintaining a clean (distraction-free) layout so students focus on educational content.",
         ],
-
         gallery: [
             "/galeri-edusensei-1.png",
             "/galeri-edusensei-3.png",
             "/galeri-edusensei-2.png",
             "/galeri-edusensei-4.jpg",
         ],
-
         features: [
-            "Manajemen Video Pembelajaran (VOD) Berbasis VTuber",
-            "Sistem Kuis Evaluasi Pasca-Video",
-            "Antarmuka Siswa & Dashboard Progres Belajar",
-            "Navigasi Materi Terstruktur",
-            "Proyek Didanai Hibah P2MW (Tingkat Nasional)",
+            "VTuber-Based Learning Video Management (VOD)",
+            "Post-Video Evaluation Quiz System",
+            "Student Interface & Learning Progress Dashboard",
+            "Structured Content Navigation",
+            "P2MW Grant-Funded Project (National Level)",
         ],
-
         techStack: [
             "React.js",
             "Tailwind CSS",
             "Web Development",
             "Interactive UI",
         ],
-
         image: "/edusensei.jpg",
-
         githubLink: "https://github.com/rchmtmaulana/repo-edusensei",
         demoLink: "https://edusensei-demo.com",
     },
-    // {
-    //     id: 4,
-    //     title: "SkinScan - AI Skin Disease Detection",
-    //     category: "Bangkit Academy Capstone",
+    {
+        id: 4,
+        title: "SkinScan - AI Skin Disease Detection",
+        category: "Bangkit Academy Capstone",
 
-    //     description:
-    //         "Aplikasi seluler bertenaga AI untuk mendeteksi penyakit kulit. Bertanggung jawab penuh atas infrastruktur Cloud, mendeploy model ML ke Google Cloud Platform (GCP) dan manajemen API.",
+        description:
+            "AI-powered mobile application for skin disease detection. Fully responsible for Cloud infrastructure, deploying ML models to Google Cloud Platform (GCP) and API management.",
 
-    //     fullDescription:
-    //         "Sebagai Cloud Computing Cohort di Bangkit Academy, saya memimpin pengembangan infrastruktur backend untuk SkinScan, aplikasi Android yang menggunakan Machine Learning untuk mengidentifikasi jenis penyakit kulit. Fokus utama peran saya adalah menjembatani model AI (yang dibuat tim ML) dengan aplikasi mobile (yang dibuat tim Android) melalui API yang skalabel dan reliabel di Google Cloud.",
+        fullDescription:
+            "As a Cloud Computing Cohort at Bangkit Academy, I led the backend infrastructure development for SkinScan, an Android application that uses Machine Learning to identify types of skin diseases. My primary role focused on bridging the AI model (built by the ML team) with the mobile application (built by the Android team) through a scalable and reliable API on Google Cloud.",
 
-    //     problem:
-    //         "Aplikasi medis berbasis AI membutuhkan resource komputasi yang besar untuk menjalankan model inferensi (prediksi). Menjalankan model ini langsung di HP pengguna (on-device) akan membuat aplikasi lambat dan boros baterai. Selain itu, backend harus mampu menangani lonjakan pengguna secara tiba-tiba tanpa down.",
+        problem:
+            "AI-based medical applications require substantial computational resources to run inference models (predictions). Running these models directly on user devices (on-device) would make the application slow and drain battery life. Additionally, the backend must be capable of handling sudden user traffic spikes without downtime.",
 
-    //     solution:
-    //         "Merancang arsitektur **Serverless Microservices** di Google Cloud Platform (GCP). Model ML dideploy menggunakan **Cloud Run** (containerized) untuk memastikan auto-scaling (infrastruktur otomatis membesar saat pengguna banyak dan mengecil saat sepi). Saya juga membangun RESTful API sebagai gateway komunikasi, menggunakan **Cloud Storage** untuk menyimpan gambar pengguna, dan **Firestore** untuk database metadata.",
+        solution:
+            "Designed a **Serverless Microservices** architecture on Google Cloud Platform (GCP). The ML model was deployed using **Cloud Run** (containerized) to ensure auto-scaling (infrastructure automatically scales up during high traffic and scales down during low traffic). I also built a RESTful API as the communication gateway, using **Cloud Storage** to store user images, and **Firestore** for metadata database.",
 
-    //     features: [
-    //         "Arsitektur Serverless menggunakan Google Cloud Run",
-    //         "Deployment Model ML & Serving API",
-    //         "Infrastruktur Auto-scaling untuk Trafik Tinggi",
-    //         "Penyimpanan Gambar Aman (Cloud Storage Buckets)",
-    //         "Integrasi RESTful API dengan Aplikasi Mobile",
-    //         "Proyek Capstone Bangkit (Kohort Lulusan Terbaik)",
-    //     ],
+        features: [
+            "Serverless Architecture using Google Cloud Run",
+            "ML Model Deployment & API Serving",
+            "Auto-scaling Infrastructure for High Traffic",
+            "Secure Image Storage (Cloud Storage Buckets)",
+            "RESTful API Integration with Mobile Application",
+            "Bangkit Capstone Project (Distinguished Graduate Cohort)",
+        ],
 
-    //     techStack: [
-    //         "GCP",
-    //         "Cloud Run",
-    //         "Docker",
-    //         "Cloud Storage",
-    //         "Firestore",
-    //         "Python API",
-    //     ],
+        techStack: [
+            "GCP",
+            "Cloud Run",
+            "Docker",
+            "Cloud Storage",
+            "Firestore",
+            "Python API",
+        ],
 
-    //     image: "/skinscan.jpg",
+        image: "/skinscan.jpg",
 
-    //     githubLink: "https://github.com/rchmtmaulana/SkinScan-Project",
-    //     demoLink: null,
-    // },
+        githubLink: "https://github.com/rchmtmaulana/SkinScan-Project",
+        demoLink: null,
+    },
 ];
