@@ -2,11 +2,11 @@ export const projects = [
     {
         id: 1,
         title: "AI-Based Vehicle Classification System",
-        category: "Thesis Project (PT Margautama Nusantara)",
+        category: "Thesis Project (Makassar Toll Road)",
         description:
             "Decision support system for hybrid toll gates combining Computer Vision and sensor technology. Assists toll operators in accurately identifying vehicle classes to minimize manual input errors.",
         fullDescription:
-            "This project was developed as a digital assistive tool for operators at Makassar Hybrid Toll Gates (PT Margautama Nusantara). Previously, operators had to manually observe vehicle physical characteristics and determine classifications entirely by themselves. With this system, operators receive automated class recommendations displayed in real-time on their monitor. Their role shifts from 'data entry personnel' to 'verifier,' where they only need to confirm the system's detection results or make corrections when necessary.",
+            "This project was developed as a digital assistive tool for hybrid toll gate operators on the Makassar Toll Road (managed by PT Makassar Metro Network and PT Makassar Airport Network). Previously, operators had to manually observe vehicle physical characteristics and determine classifications entirely by themselves. With this system, operators receive automated class recommendations displayed in real-time on their monitor. Their role shifts from 'data entry personnel' to 'verifier,' where they only need to confirm the system's detection results or make corrections when necessary.",
         problem:
             "Manual vehicle classification requires operators to perform continuous visual observation of every passing vehicle. This repetitive process causes high visual fatigue, often leading to classification errors (human error), especially during poor weather conditions or low lighting where vehicle physical characteristics are difficult to discern clearly.",
         solution:
@@ -153,7 +153,7 @@ export const projects = [
             "AI-based medical applications require substantial computational resources to run inference models (predictions). Running these models directly on user devices (on-device) would make the application slow and drain battery life. Additionally, the backend must be capable of handling sudden user traffic spikes without downtime.",
 
         solution:
-            "Designed a **Serverless Microservices** architecture on Google Cloud Platform (GCP). The ML model was deployed using **Cloud Run** (containerized) to ensure auto-scaling (infrastructure automatically scales up during high traffic and scales down during low traffic). I also built a RESTful API as the communication gateway, using **Cloud Storage** to store user images, and **Firestore** for metadata database.",
+            "Designed a Serverless Microservices architecture on Google Cloud Platform (GCP). The ML model was deployed using Cloud Run (containerized) to ensure auto-scaling (infrastructure automatically scales up during high traffic and scales down during low traffic). I also built a RESTful API as the communication gateway, using Cloud Storage to store user images, and Firestore for metadata database.",
 
         features: [
             "Serverless Architecture using Google Cloud Run",
