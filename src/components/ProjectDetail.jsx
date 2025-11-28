@@ -26,7 +26,6 @@ const ProjectDetail = () => {
     return (
         <div className="bg-slate-50 min-h-screen pt-24 pb-20">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Tombol Kembali */}
                 <Link
                     to="/"
                     className="inline-flex items-center text-slate-500 hover:text-blue-600 mb-8 font-medium transition group"
@@ -35,7 +34,6 @@ const ProjectDetail = () => {
                     Back to Home
                 </Link>
 
-                {/* Header Proyek */}
                 <div className="mb-10">
                     <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4">
                         {project.title}
@@ -44,7 +42,6 @@ const ProjectDetail = () => {
                         <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold">
                             {project.category}
                         </span>
-                        {/* Tech Stack Badges di Header */}
                         {project.techStack.map((tech, idx) => (
                             <span
                                 key={idx}
@@ -56,18 +53,14 @@ const ProjectDetail = () => {
                     </div>
                 </div>
 
-                {/* Gambar Utama (Hero Image) */}
                 <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-auto max-h-[500px] object-cover rounded-2xl shadow-xl mb-12"
                 />
 
-                {/* Layout Grid Utama */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                    {/* KOLOM KIRI (Konten Utama) */}
                     <div className="lg:col-span-2 space-y-12">
-                        {/* 1. Overview & Full Description */}
                         <section>
                             <h2 className="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2">
                                 Overview
@@ -77,7 +70,6 @@ const ProjectDetail = () => {
                             </p>
                         </section>
 
-                        {/* 2. Problem & Solution */}
                         <div className="grid grid-cols-1 gap-8">
                             <section className="bg-red-50 p-6 rounded-xl border border-red-100">
                                 <h3 className="text-xl font-bold text-red-700 mb-3 flex items-center gap-2">
@@ -104,7 +96,6 @@ const ProjectDetail = () => {
                             </section>
                         </div>
 
-                        {/* 3. Challenges & Learnings (BARU) */}
                         {project.challenges && (
                             <section>
                                 <h2 className="text-2xl font-bold text-slate-900 mb-4 border-b border-slate-200 pb-2 flex items-center gap-2">
@@ -131,7 +122,6 @@ const ProjectDetail = () => {
                             </section>
                         )}
 
-                        {/* 4. Gallery (BARU) */}
                         {project.gallery && (
                             <section>
                                 <h2 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-2">
@@ -143,7 +133,6 @@ const ProjectDetail = () => {
                                             key={idx}
                                             src={img}
                                             alt={`Gallery ${idx}`}
-                                            // Tambahkan onClick di sini
                                             onClick={() =>
                                                 setSelectedImage(img)
                                             }
@@ -155,9 +144,7 @@ const ProjectDetail = () => {
                         )}
                     </div>
 
-                    {/* KOLOM KANAN (Sidebar Info) */}
                     <div className="space-y-8">
-                        {/* Key Features */}
                         <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 sticky top-24">
                             <h3 className="font-bold text-slate-900 mb-6 text-lg">
                                 Key Features
@@ -179,7 +166,6 @@ const ProjectDetail = () => {
                                 ))}
                             </ul>
 
-                            {/* Impact / Key Results (BARU) */}
                             {project.impact && (
                                 <div className="mt-8 pt-8 border-t border-slate-100">
                                     <h3 className="font-bold text-slate-900 mb-4 text-lg flex items-center gap-2">
@@ -199,8 +185,7 @@ const ProjectDetail = () => {
                                 </div>
                             )}
 
-                            {/* GitHub Button
-                            {project.githubLink && (
+                            {/* {project.githubLink && (
                                 <div className="mt-8">
                                     <a
                                         href={project.githubLink}
@@ -233,10 +218,9 @@ const ProjectDetail = () => {
             {selectedImage && (
                 <div
                     className="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300"
-                    onClick={() => setSelectedImage(null)} // Klik background hitam untuk tutup
+                    onClick={() => setSelectedImage(null)}
                 >
                     <div className="relative max-w-5xl w-full">
-                        {/* Tombol Close (X) */}
                         <button
                             onClick={() => setSelectedImage(null)}
                             className="absolute -top-12 right-0 text-white hover:text-red-400 transition transform hover:scale-110"
@@ -244,12 +228,11 @@ const ProjectDetail = () => {
                             <FaTimes size={30} />
                         </button>
 
-                        {/* Gambar Besar */}
                         <img
                             src={selectedImage}
                             alt="Full Preview"
                             className="w-full h-auto max-h-[85vh] object-contain rounded-lg shadow-2xl"
-                            onClick={(e) => e.stopPropagation()} // Supaya klik gambar tidak menutup modal
+                            onClick={(e) => e.stopPropagation()}
                         />
                     </div>
                 </div>

@@ -28,6 +28,13 @@ const Navbar = () => {
                         </HashLink>
                         <HashLink
                             smooth
+                            to="/#projects"
+                            className="text-slate-600 hover:text-blue-600 transition"
+                        >
+                            Projects
+                        </HashLink>
+                        <HashLink
+                            smooth
                             to="/#skills"
                             className="text-slate-600 hover:text-blue-600 transition"
                         >
@@ -35,18 +42,11 @@ const Navbar = () => {
                         </HashLink>
                         <HashLink
                             smooth
-                            to="/#projects"
-                            className="text-slate-600 hover:text-blue-600 transition"
-                        >
-                            Projects
-                        </HashLink>
-                        {/* <HashLink
-                            smooth
                             to="/#certificates"
                             className="text-slate-600 hover:text-blue-600 transition"
                         >
                             Certificates
-                        </HashLink> */}
+                        </HashLink>
 
                         <HashLink
                             smooth

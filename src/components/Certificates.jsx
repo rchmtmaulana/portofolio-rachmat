@@ -9,7 +9,6 @@ const Certificates = () => {
             className="py-16 px-4 bg-gradient-to-b from-slate-50 to-white"
         >
             <div className="max-w-7xl mx-auto">
-                {/* Header Section */}
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 text-blue-600 rounded-full text-sm font-medium mb-4">
                         <FaAward className="text-lg" />
@@ -24,14 +23,12 @@ const Certificates = () => {
                     </p>
                 </div>
 
-                {/* Certificate Grid */}
                 <div className="flex flex-wrap justify-center gap-6">
                     {certificates.map((cert) => (
                         <article
                             key={cert.id}
                             className="w-full sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] group bg-white rounded-xl border border-slate-200 overflow-hidden hover:shadow-2xl hover:border-blue-300 transition-all duration-300 flex flex-col"
                         >
-                            {/* Certificate Image */}
                             <div className="relative h-48 bg-gradient-to-br from-slate-100 to-slate-50 overflow-hidden">
                                 <img
                                     src={cert.image}
@@ -44,14 +41,11 @@ const Certificates = () => {
                                 />
                             </div>
 
-                            {/* Certificate Content */}
                             <div className="p-5 flex-1 flex flex-col">
-                                {/* Title */}
                                 <h3 className="text-lg font-bold text-slate-800 mb-2 line-clamp-2 min-h-[56px]">
                                     {cert.title}
                                 </h3>
 
-                                {/* Issuer & Date */}
                                 <div className="mb-3 text-sm text-slate-600">
                                     <p className="font-medium">{cert.issuer}</p>
                                     <p className="text-slate-500 mt-1">
@@ -59,7 +53,6 @@ const Certificates = () => {
                                     </p>
                                 </div>
 
-                                {/* Verify Credential Button */}
                                 <div className="mt-auto pt-4 border-t border-slate-100">
                                     {cert.link ? (
                                         <a

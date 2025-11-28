@@ -37,7 +37,6 @@ const Hero = () => {
                         .
                     </p>
 
-                    {/* Tombol Download - Baris Pertama */}
                     <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
                         <a
                             href="/CV_Rachmat_Maulana.pdf"
@@ -61,7 +60,6 @@ const Hero = () => {
                         </button>
                     </div>
 
-                    {/* Ikon Sosial Media - Baris Kedua */}
                     <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
                         <a
                             href="https://github.com/rchmtmaulana"
