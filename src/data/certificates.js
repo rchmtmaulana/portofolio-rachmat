@@ -79,6 +79,14 @@ export const certificates = [
         image: "/dicoding-7.png",
         link: "https://www.dicoding.com/certificates/KEXL8N8YWZG2",
     },
+    {
+        id: 11,
+        title: "Database Foundations",
+        issuer: "Oracle Academy",
+        date: "Nov 2022",
+        image: "/oracle-certificate.jpg",
+        link: null,
+    },
     // {
     //     id: 11,
     //     title: "TOEFL",

@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex items-center justify-between h-16">
                     <div className="flex-shrink-0 flex items-center">
                         <HashLink
                             smooth
@@ -18,7 +18,7 @@ const Navbar = () => {
                         </HashLink>
                     </div>
 
-                    <div className="hidden md:flex space-x-8">
+                    <div className="hidden md:flex items-center space-x-8">
                         <HashLink
                             smooth
                             to="/#home"
@@ -102,6 +102,14 @@ const Navbar = () => {
                         </HashLink>
                         <HashLink
                             smooth
+                            to="/#projects"
+                            className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Projects
+                        </HashLink>
+                        <HashLink
+                            smooth
                             to="/#skills"
                             className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md"
                             onClick={() => setIsOpen(false)}
@@ -110,11 +118,20 @@ const Navbar = () => {
                         </HashLink>
                         <HashLink
                             smooth
-                            to="/#projects"
+                            to="/#certificates"
                             className="block px-3 py-2 text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50 rounded-md"
                             onClick={() => setIsOpen(false)}
                         >
-                            Projects
+                            Certificates
+                        </HashLink>
+
+                        <HashLink
+                            smooth
+                            to="/#contact"
+                            className="block mx-3 my-2 px-4 py-2 text-center text-base font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            Contact Me
                         </HashLink>
                     </div>
                 </div>
