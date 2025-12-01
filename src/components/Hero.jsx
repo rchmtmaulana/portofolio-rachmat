@@ -45,19 +45,13 @@ const Hero = () => {
                         >
                             Curriculum Vitae
                         </a>
-                        {/* <a
-                            href="/SKL_Rachmat_Maulana.pdf"
+                        <a
+                            href="/Surat Keterangan Lulus Sementara - Rachmat Maulana D121211015 (2).pdf"
                             download
                             className="w-full sm:w-auto px-8 py-3 bg-white text-blue-600 font-medium rounded-lg border-2 border-blue-600 hover:bg-blue-50 shadow-lg hover:shadow-blue-500/20 transition transform hover:-translate-y-1"
                         >
                             Graduation Certificate
-                        </a> */}
-                        <button
-                            disabled
-                            className="w-full sm:w-auto px-8 py-3 bg-gray-300 text-gray-500 font-medium rounded-lg border-2 border-gray-300 cursor-not-allowed shadow-lg opacity-60"
-                        >
-                            Graduation Certificate
-                        </button>
+                        </a>
                     </div>
 
                     <div className="flex items-center justify-center md:justify-start gap-4 pt-2">
