@@ -46,11 +46,11 @@ const Hero = () => {
                             Curriculum Vitae
                         </a>
                         <a
-                            href="/Surat Keterangan Lulus Sementara - Rachmat Maulana D121211015 (2).pdf"
+                            href="/IJAZAH S1 Rachmat Maulana.pdf"
                             download
                             className="w-full sm:w-auto px-8 py-3 bg-white text-blue-600 font-medium rounded-lg border-2 border-blue-600 hover:bg-blue-50 shadow-lg hover:shadow-blue-500/20 transition transform hover:-translate-y-1"
                         >
-                            Graduation Certificate
+                            Bachelor's Degree Certificate
                         </a>
                     </div>
 
