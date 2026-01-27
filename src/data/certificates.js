@@ -1,7 +1,7 @@
 export const certificates = [
     {
         id: 1,
-        title: "Cloud Computing Cohort (Distinction)",
+        title: "Cloud Computing Cohort",
         issuer: "Bangkit Academy 2024 by Google, Gojek, Tokopedia, Traveloka",
         date: "Jul 2024",
         image: "bangkit.png",

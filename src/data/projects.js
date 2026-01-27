@@ -85,8 +85,8 @@ export const projects = [
         ],
         techStack: [
             "React.js",
-            "Firebase Auth",
-            "Cloud Firestore",
+            "Tailwind CSS",
+            "Firebase",
             "PDF Generation",
         ],
         image: "/intern_samudera.jpg",
@@ -170,7 +170,6 @@ export const projects = [
             "Docker",
             "Cloud Storage",
             "Firestore",
-            "Python API",
         ],
 
         image: "/skinscan.jpg",
