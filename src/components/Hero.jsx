@@ -32,7 +32,7 @@ const Hero = () => {
                         and intelligent systems with{" "}
                         <span className="font-semibold text-slate-800">
                             {" "}
-                            Python & Cloud Computing
+                            Artificial Intelligence
                         </span>
                         .
                     </p>
